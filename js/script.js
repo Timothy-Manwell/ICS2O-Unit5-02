@@ -19,7 +19,7 @@ if (navigator.serviceWorker) {
  * This funtion generates and displays random number
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("flash1").checked
+  buttonOnChecked = document.getElementById('flash1').checked
 
   if (buttonOnChecked == true) {
     //generates random positive number
