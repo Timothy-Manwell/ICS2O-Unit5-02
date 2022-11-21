@@ -26,7 +26,7 @@ const randomPosNum = Math.floor(Math.random() * 6) + 1
 const randomNegNum = Math.floor(Math.random() * -6) + 1
 
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("flash1").checked
+  document.getElementById("flash1").checked = buttonOnChecked
 
   if (buttonOnChecked == true) {
     //displays random positive number
