@@ -15,10 +15,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This funtion generates and displays random number
- */
-
 //generates random positive number
 const randomPosNum = Math.floor(Math.random() * 6) + 1
 
@@ -26,14 +22,12 @@ const randomPosNum = Math.floor(Math.random() * 6) + 1
 const randomNegNum = Math.floor(Math.random() * -6) + 1
 
 function myButtonClicked() {
-  document.getElementById("flash1").checked = buttonOnChecked
+  buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
-    //displays random positive number
     document.getElementById("radio-button-value").innerHTML =
       "Your random positive number is: " + randomPosNum
   } else {
-    //displays random negative number
     document.getElementById("radio-button-value").innerHTML =
       "Your random negative number is: " + randomNegNum
   }
