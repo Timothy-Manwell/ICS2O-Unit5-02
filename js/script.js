@@ -22,7 +22,7 @@ const randomPosNum = Math.floor(Math.random() * 6) + 1
 const randomNegNum = Math.floor(Math.random() * -6) + 1
 
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById('flash1').checked
+  buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
