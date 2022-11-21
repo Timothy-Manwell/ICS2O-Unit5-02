@@ -21,14 +21,16 @@ const randomPosNum = Math.floor(Math.random() * 6) + 1
 //generates random negative number
 const randomNegNum = Math.floor(Math.random() * -6) + 1
 
+
 function myButtonClicked() {
   buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "Your random positive number is: " + randomPosNum
+    "Your random positive number is: " + randomPosNum
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "Your random negative number is: " + randomNegNum
+    "Your random negative number is: " + randomNegNum
   }
 }
+
