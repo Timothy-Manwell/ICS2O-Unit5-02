@@ -18,22 +18,23 @@ if (navigator.serviceWorker) {
 /**
  * This funtion generates and displays random number
  */
+
+//generates random positive number
+const randomPosNum = Math.floor(Math.random() * 6) + 1
+
+//generates random negative number
+const randomNegNum = Math.floor(Math.random() * -6) + 1
+
 function myButtonClicked() {
   buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
-    //generates random positive number
-    const randomPosNum = Math.floor(Math.random() * 6) + 1
-
     //displays random positive number
     document.getElementById("radio-button-value").innerHTML =
-      "Your random number is: " + randomPosNum
+      "Your random positive number is: " + randomPosNum
   } else {
-    //generates random negative number
-    const randomNegNum = Math.floor(Math.random() * -6) + 1
-
     //displays random negative number
     document.getElementById("radio-button-value").innerHTML =
-      "Your random number is: " + randomNegNum
+      "Your random negative number is: " + randomNegNum
   }
 }
