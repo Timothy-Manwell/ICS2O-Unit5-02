@@ -4,31 +4,32 @@
 // Created on: Nov 2022
 // This file contains the JS functions for index.html
 
-"use strict"
-
 /**
- * Check service worker.
+ * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit5-02/sw.js", {
-    scope: "/ICS2O-Unit5-02/",
-  })
+  navigator.serviceWorker.register(
+    "/ICS2O-Unit5-02/sw.js",
+    {
+      scope: "/ICS2O-Unit5-02/",
+    }
+  )
 }
 
-//generates random positive number
-const randomPosNum = Math.floor(Math.random() * 6) + 1
+const randomNumberPos = Math.floor(Math.random() * 6) + 1
+const randomNumberNeg = Math.floor(Math.random() * -6) + 1
 
-//generates random negative number
-const randomNegNum = Math.floor(Math.random() * -6) + 1
-
+/**
+ * This function displays positive and negative number
+ */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("flash1").checked
+  buttonOnChecked = document.getElementById('flash1').checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "Your random positive number is: " + randomPosNum
+    "Your random number is " + randomNumberPos + "."
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "Your random negative number is: " + randomNegNum
+    "Your random number is " + randomNumberNeg + "."
   }
 }
